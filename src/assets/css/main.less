@@ -1,0 +1,83 @@
+@import "variable-definitions";
+
+/*
+ * 基本默认样式
+ */
+
+html {
+  // html 的 font-size 默认是 16px => 1rem = 16px
+  // 设置 font-size 为 62.5% 后，1rem = 16px * 62.5% = 10px
+  // 后续所有样式使用 rem 代替 px，例如：font-size: 1.4rem 默认表示 14px 字体大小
+  font-size: 62.5%;
+  color: #222;
+
+  @media screen and (max-width: @mobileWidth) {
+    font-size: 50%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+
+/*
+ * 撤销基本默认样式
+ */
+
+.reset-custom-global {
+  a {
+    text-decoration: underline;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 4rem;
+
+    li {
+      list-style: disc;
+    }
+  }
+
+  ol {
+    margin: 0;
+    padding: 0 0 0 4rem;
+
+    li {
+      list-style: decimal;
+    }
+  }
+}

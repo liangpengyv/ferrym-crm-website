@@ -2,28 +2,28 @@
   <div class="app-header" :style="{background: backgroundStyle}">
     <div class="container center-block clear-fix">
       <div class="float-left pull-left">
-        <a class="nav-logo" href="/"></a>
+        <a class="nav-logo" href="/" style="visibility: hidden"></a>
         <div class="nav">
           <i class="mobile-menu el-icon-menu"></i>
           <ul class="nav-menu-list">
             <li>
-              <a href="/">
-                <span class="nav-active">首页</span>
+              <a href="/#about-rpa">
+                <span>关于 RPA</span>
               </a>
             </li>
             <li>
-              <a :href="appMarketUrl" target="_blank">
-                <span>应用市场</span>
+              <a href="/#production">
+                <span>底层架构</span>
               </a>
             </li>
             <li>
-              <a :href="forumUrl" target="_blank">
-                <span>社区</span>
+              <a href="/#solution">
+                <span>解决方案</span>
               </a>
             </li>
             <li>
-              <a :href="documentUrl" target="_blank">
-                <span>用户手册</span>
+              <a href="/#about-us">
+                <span>关于我们</span>
               </a>
             </li>
           </ul>
@@ -40,7 +40,7 @@
             <i class="system-notification-icon el-icon-message-solid"></i>
           </el-badge>
         </a>
-        <div class="account">
+        <div class="account" style="display: none">
           <div class="on-logout" v-if="!hasGetInfo">
             <ul>
               <li>
@@ -264,6 +264,7 @@
           }
 
           .nav-menu-list {
+            margin-left: -21rem;
 
             @media screen and (max-width: @mobileWidth) {
               display: none;
@@ -286,10 +287,11 @@
               }
 
               a {
-                padding: 0.9rem;
+                padding: 0.9rem 2.4rem;
                 margin-left: 0.1rem;
-                font-size: 1.4rem;
-                font-weight: 400;
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: .5;
                 color: rgba(255, 255, 255, 1);
 
                 @media screen and (max-width: @mobileWidth) {

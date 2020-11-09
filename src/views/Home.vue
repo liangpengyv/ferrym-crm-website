@@ -18,7 +18,7 @@
           </el-carousel-item>
         </el-carousel>
       </div>
-      <div class="about-rpa">
+      <div class="about-rpa" id="about-rpa">
         <div class="about-rpa-container center-block">
           <div class="about-uni-rpa clear-fix">
             <div class="about-uni-rpa-left pull-left">
@@ -35,7 +35,7 @@
               <img class="image-framework" src="../assets/img/views/home/about-rpa-framework.png" alt="关于 Uni RPA">
             </div>
           </div>
-          <div class="rpa-superiority">
+          <div class="rpa-superiority" id="rpa-superiority">
             <h3 class="title">中大 RPA 特色</h3>
             <div class="spacer"></div>
             <div class="superiority-list">
@@ -95,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="production">
+      <div class="production" id="production">
         <div class="production-title">
           <h1 class="title">底层基础架构介绍</h1>
         </div>
@@ -111,7 +111,7 @@
                 <li>支持浏览器、桌面、应用程序、企业系统等多平台识别与操作</li>
                 <li>开放式AI集成平台，可设计具备多种AI能力的数字员工</li>
               </ul>
-              <el-button class="go-to-studio" type="primary" @click="$router.push('/uni-studio')">开始试用</el-button>
+              <el-button class="go-to-studio" type="primary" @click="$router.push('/uni-studio')" style="visibility: hidden">开始试用</el-button>
             </div>
             <div class="studio-section-right pull-right">
               <img src="../assets/img/views/home/product-studio.png" alt="split">
@@ -150,7 +150,7 @@
                 <li>尤为注重企业信息安全，采用严格的权限管理及数据加密措施</li>
               </ul>
               <el-tooltip effect="dark" content="Coming soon..." placement="top">
-                <el-button class="go-to-control-center" type="primary">开始试用</el-button>
+                <el-button class="go-to-control-center" type="primary" style="visibility: hidden">开始试用</el-button>
               </el-tooltip>
             </div>
             <div class="control-center-section-right pull-right">
@@ -160,7 +160,7 @@
         </div>
         <div class="production-split-2"></div>
       </div>
-      <div class="solution">
+      <div class="solution" id="solution">
         <el-dialog
           class="solution-detail-dialog"
           :visible.sync="isShowSolutionDetailDialog"
@@ -188,7 +188,7 @@
           </swiper>
         </div>
       </div>
-      <div class="about-us">
+      <div class="about-us" id="about-us">
         <div class="about-us-title">
           <h1 class="title">关于我们</h1>
         </div>
@@ -222,7 +222,7 @@
             </p>
           </div>
         </div>
-        <div class="use-and-consult center-block clear-fix">
+        <div class="use-and-consult center-block clear-fix" style="visibility: hidden">
           <div class="use-or-consult-container pull-left clear-fix">
             <div class="icon pull-left">
               <img src="../assets/img/views/home/about-us-btn-use-product.png" alt="">
@@ -550,10 +550,10 @@
       }
 
       .about-rpa {
+          padding-top: 13.3rem;
 
         .about-rpa-container {
           width: 144rem;
-          margin-top: 13.3rem;
 
           @media screen and (max-width: @mobileWidth) {
             width: 100%
@@ -1281,6 +1281,7 @@
 
           .company-introduction-section-left {
             width: 61.5rem;
+            width: 28rem;
 
             @media screen and (max-width: @mobileWidth) {
               width: 100%;
@@ -1291,6 +1292,7 @@
               font-weight: 500;
               color: #333333;
               line-height: 4.5rem;
+              line-height: 8rem;
               margin: 20.5rem 0 0 0;
 
               &:before {
@@ -1318,6 +1320,7 @@
               font-weight: 400;
               color: #666666;
               line-height: 3.4rem;
+              line-height: 4.2rem;
               margin: 4.2rem 0 0 0;
 
               @media screen and (max-width: @mobileWidth) {
@@ -1330,8 +1333,9 @@
 
             img {
               width: 76.4rem;
+              width: 100rem;
+              margin-right: 8rem;
               height: 54.8rem;
-              height: 24rem;
               margin-top: 25.2rem;
 
               @media screen and (max-width: @mobileWidth) {
@@ -1467,6 +1471,7 @@
         .use-and-consult {
           width: 144rem;
           margin-bottom: 15.1rem;
+          margin-bottom: 0;
 
           @media screen and (max-width: @mobileWidth) {
             width: 90%;

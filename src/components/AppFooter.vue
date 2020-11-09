@@ -2,7 +2,7 @@
   <div class="app-footer">
     <div class="container center-block">
       <div class="section-top">
-        <div class="column-1">
+        <div class="column-1" style="visibility: hidden">
           <img class="logo" src="../assets/img/components/_common/nav-logo.png" alt="">
           <h1 class="slogan">Power Everyone with Automation</h1>
           <p class="description">
@@ -11,30 +11,30 @@
         </div>
         <div class="column-2">
           <h2 class="title">RPA 平台</h2>
-          <a class="item" :href="callbackUrl + '/#uni-studio'">Uni Studio</a>
-          <a class="item" :href="callbackUrl + '/#uni-workforce'">Uni Workforce</a>
-          <a class="item" :href="callbackUrl + '/#uni-control-center'">Uni Control Center</a>
+          <a class="item" href="/#uni-studio">中大 Studio</a>
+          <a class="item" href="/#uni-workforce">中大 Workforce</a>
+          <a class="item" href="/#uni-control-center">中大 Control Center</a>
         </div>
         <div class="column-3">
           <h2 class="title">解决方案</h2>
-          <a class="item" :href="callbackUrl + '/#solution-container'">基于流程自动化尝试需求</a>
-          <a class="item" :href="callbackUrl + '/#solution-container'">基于明确的应用场景需求</a>
-          <a class="item" :href="callbackUrl + '/#solution-container'">基于自动化能力提升诉求</a>
-          <a class="item" :href="callbackUrl + '/#solution-container'">数字化劳动力团队构建服务</a>
+          <a class="item" href="/#solution-container">ORACLE ERP RPA 业务场景</a>
+          <a class="item" href="/#solution-container">SAP ERP RPA 业务场景</a>
+          <a class="item" href="/#solution-container">RPA 在财务、税务领域应用</a>
+          <a class="item" href="/#solution-container">RPA 在人力资源使用</a>
         </div>
         <div class="column-4">
           <h2 class="title">关于我们</h2>
-          <a class="item" :href="callbackUrl + '/#company-introduction'">公司简介</a>
-          <a class="item" :href="callbackUrl + '/#development-path'">发展历程</a>
-          <a class="item" :href="callbackUrl + '/#team-introduction'">团队简介</a>
+          <a class="item" href="/#company-introduction">公司简介</a>
+          <a class="item" href="/#development-path" style="visibility: hidden">发展历程</a>
+          <a class="item" href="/#team-introduction" style="visibility: hidden">团队简介</a>
         </div>
-        <div class="column-5 text-center">
+        <div class="column-5 text-center" style="visibility: hidden">
           <h2 class="title">关注我们</h2>
           <img class="uni-rpa-wechat" src="../assets/img/components/app-footer/uni-rpa-wechat.png" alt="">
           <span class="description">微信公众号</span>
         </div>
       </div>
-      <div class="section-bottom text-center">
+      <div class="section-bottom text-center" style="display: none">
         <p class="contact">
           商务合作：business@cn-tianxing.com
           <span class="spacer">|</span>
@@ -49,6 +49,11 @@
           Copyright© 2017-2020 Uni 北京天行有灵科技有限公司
           <span class="spacer">|</span>
           <a class="record" href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备20008217号-1</a>
+        </p>
+      </div>
+      <div class="section-bottom text-center">
+        <p class="copyright">
+          Copyright© 2020 中大 RPA
         </p>
       </div>
     </div>
@@ -91,6 +96,7 @@
           display: inline-block;
           vertical-align: top;
           width: 33%;
+          width: 30%;
 
           @media screen and (max-width: @mobileWidth) {
             width: 90%;

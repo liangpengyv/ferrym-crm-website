@@ -70,8 +70,8 @@
   @import "../assets/css/variable-definitions";
 
   .app-footer {
-    background-color: #000403;
-    padding: 13.6rem 0 7.2rem 0;
+    background: rgba(23, 38, 51, 1);
+    padding: 3.2rem 0 3.2rem 0;
     min-width: 144rem;
 
     @media screen and (max-width: @mobileWidth) {
@@ -91,7 +91,6 @@
           display: inline-block;
           vertical-align: top;
           width: 33%;
-          width: 30%;
 
           @media screen and (max-width: @mobileWidth) {
             width: 90%;
@@ -99,23 +98,18 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            margin-top: -8rem;
           }
 
           .logo {
-            width: 23.5rem;
-
-            @media screen and (max-width: @mobileWidth) {
-              width: 16rem;
-            }
+            width: 16rem;
           }
 
           .slogan {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 400;
             color: #FFFFFF;
-            line-height: 2.8rem;
-            margin: 1.6rem 0 0 0;
+            line-height: 1.6rem;
+            margin: .8rem 0 0 0;
 
             @media screen and (max-width: @mobileWidth) {
               font-size: 1.8rem;
@@ -124,11 +118,11 @@
 
           .description {
             width: 33rem;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: #aeafae;
-            line-height: 2.5;
-            margin: 1.6rem 0 0 0;
+            line-height: 2;
+            margin: 1rem 0 0 0;
 
             @media screen and (max-width: @mobileWidth) {
               width: 90%;
@@ -150,20 +144,21 @@
           }
 
           .title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: #FFFFFF;
-            line-height: 2.8rem;
-            margin: 2.4rem 0 1.4rem 0;
+            line-height: 2.4rem;
+            margin: 2.4rem 0 1rem 0;
           }
 
           .item {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: #aeafae;
-            line-height: 2;
+            line-height: 1.5;
             margin: .8rem 0;
+            width: 50%;
 
             &:hover {
               color: white;
@@ -181,20 +176,21 @@
           }
 
           .title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: #FFFFFF;
-            line-height: 2.8rem;
-            margin: 2.4rem 0 1.4rem 0;
+            line-height: 2.4rem;
+            margin: 2.4rem 0 1rem 0;
           }
 
           .item {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: #aeafae;
-            line-height: 2;
+            line-height: 1.5;
             margin: .8rem 0;
+            width: 70%;
 
             &:hover {
               color: white;
@@ -212,20 +208,21 @@
           }
 
           .title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: #FFFFFF;
-            line-height: 2.8rem;
-            margin: 2.4rem 0 1.4rem 0;
+            line-height: 2.4rem;
+            margin: 2.4rem 0 1rem 0;
           }
 
           .item {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: #aeafae;
-            line-height: 2;
+            line-height: 1.5;
             margin: .8rem 0;
+            width: 50%;
 
             &:hover {
               color: white;
@@ -243,35 +240,33 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 4.8rem;
+            margin-top: 2.4rem;
           }
 
           .title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: #FFFFFF;
-            line-height: 2.8rem;
-            margin: 2.4rem 0 1.6rem 0;
+            line-height: 2.4rem;
+            margin: 2.4rem 0 .8rem 0;
           }
 
           .uni-rpa-wechat {
-            width: 16.6rem;
-            height: 16.6rem;
+            width: 12rem;
+            height: 12rem;
           }
 
           .description {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: #aeafae;
             line-height: 2rem;
-            margin-top: .8rem;
           }
         }
       }
 
       .section-bottom {
-        margin-top: 7.2rem;
 
         @media screen and (max-width: @mobileWidth) {
           width: 90%;
@@ -282,10 +277,14 @@
         }
 
         .contact {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           font-weight: 400;
           color: #aeafae;
-          line-height: 2;
+          line-height: 1.2;
+
+          @media screen and (max-width: @mobileWidth) {
+            line-height: 2;
+          }
 
           .spacer {
             margin: 0 1rem;
@@ -301,10 +300,14 @@
         }
 
         .copyright {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 400;
           color: #666666;
-          line-height: 2;
+          line-height: 1;
+
+          @media screen and (max-width: @mobileWidth) {
+            line-height: 1.8;
+          }
 
           .spacer {
             margin: 0 .8rem;

@@ -34,26 +34,21 @@
           <span class="description">微信公众号</span>
         </div>
       </div>
-      <div class="section-bottom text-center" style="display: none">
-        <p class="contact">
+      <div class="section-bottom text-center">
+        <p class="contact" style="display: none">
           商务合作：business@cn-tianxing.com
           <span class="spacer">|</span>
           加入我们：hr@cn-tianxing.com
         </p>
-        <p class="contact">
+        <p class="contact" style="display: none">
           地址：北京市朝阳区天畅园8号楼25层
           <span class="spacer">|</span>
           深圳市南山区讯美科技广场3号楼23A层
         </p>
         <p class="copyright">
-          Copyright© 2017-2020 Uni 北京天行有灵科技有限公司
+          Copyright© 2017-2020 北京中大图灵科技发展有限公司
           <span class="spacer">|</span>
-          <a class="record" href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备20008217号-1</a>
-        </p>
-      </div>
-      <div class="section-bottom text-center">
-        <p class="copyright">
-          Copyright© 2020 中大 RPA
+          <a class="record" href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备2020041516号-1</a>
         </p>
       </div>
     </div>

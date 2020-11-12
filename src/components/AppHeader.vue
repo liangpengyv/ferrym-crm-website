@@ -121,7 +121,8 @@
         systemNotificationUrl: process.env.VUE_APP_PERSONAL_CENTER_URL + '/#/myForum',
 
         currentSystemInfoCount: 0,
-        backgroundStyle: 'rgba(23, 38, 51, 0.2)',
+        // backgroundStyle: 'rgba(23, 38, 51, 0.2)',
+        backgroundStyle: 'rgba(23, 38, 51, 1)',
       }
     },
     computed: {
@@ -192,10 +193,10 @@
       },
     },
     mounted() {
-      window.addEventListener('scroll', this.watchScrollToChangeBackground)
+      // window.addEventListener('scroll', this.watchScrollToChangeBackground)
     },
     destroyed() {
-      window.removeEventListener('scroll', this.watchScrollToChangeBackground)
+      // window.removeEventListener('scroll', this.watchScrollToChangeBackground)
     },
   }
 </script>

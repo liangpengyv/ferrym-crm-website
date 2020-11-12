@@ -345,7 +345,7 @@
       }
       return {
         appMarketUrl: process.env.VUE_APP_APP_MARKET_URL,
-        bannerElCarouselContainerHeight: window.innerWidth > 768 ? '108.0rem' : '100vh',
+        bannerElCarouselContainerHeight: window.innerWidth > 768 ? '73.6rem' : '100vh',
         swiperOption: {
           slidesPerView: window.innerWidth > 768 ? 3 : 1,
           spaceBetween: window.innerWidth > 768 ? 24 : 24,
@@ -461,6 +461,7 @@
 
       .banner {
         min-width: 144rem;
+        margin-top: 6rem;
 
         @media screen and (max-width: @mobileWidth) {
           min-width: unset;
@@ -468,8 +469,9 @@
 
         .banner-item-1 {
           background: url("../assets/img/views/home/banner-1-pc.png") center center no-repeat;
-          background-color: #010a23;
-          background-size: cover;
+          background-color: #ffffff;
+          /*background-size: cover;*/
+          /*background-size: contain;*/
 
           .banner-item-1-container {
             width: 144rem;
@@ -505,8 +507,9 @@
 
         .banner-item-2 {
           background: url("../assets/img/views/home/banner-2-pc.jpg") center center no-repeat;
-          background-color: #20a098;
-          background-size: cover;
+          background-color: #000000;
+          /*background-size: cover;*/
+          /*background-size: contain;*/
 
           .banner-item-2-container {
             width: 144rem;
@@ -544,8 +547,9 @@
 
         .banner-item-3 {
           background: url("../assets/img/views/home/banner-3-pc.png") center center no-repeat;
-          background-color: #010a23;
-          background-size: cover;
+          background-color: #ffffff;
+          /*background-size: cover;*/
+          /*background-size: contain;*/
         }
       }
 
